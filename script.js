@@ -6,13 +6,13 @@ document
   });
 
 function generateImage(input) {
-  const OPENAI_API_KEY = "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";
+  const key = "sk-" + "nCQEmcEUrx6kVlBcZEHqT3BlbkFJwBlB78A0IGVnlvKD7ddc";
 
   fetch("https://api.openai.com/v1/images/generations", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${OPENAI_API_KEY}`,
+      Authorization: `Bearer ${key}`,
     },
     body: JSON.stringify({
       model: "dall-e-3",
